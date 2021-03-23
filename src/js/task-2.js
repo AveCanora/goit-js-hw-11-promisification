@@ -14,7 +14,7 @@ const toggleUserState = (allUsers, userName) => {
     resolve(updatedUsers);
   });
 };
-const logger2 = updatedUsers => console.table(updatedUsers);
+const logger = updatedUsers => console.table(updatedUsers);
 
-toggleUserState(users, 'Mango').then(logger2);
-toggleUserState(users, 'Lux').then(logger2);
+toggleUserState(users, 'Mango').then(logger);
+toggleUserState(users, 'Lux').then(logger);
